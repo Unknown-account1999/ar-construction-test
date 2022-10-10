@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Construction and Real Estate Corporation</title>
+    <link rel="shortcut icon" href="img/logo6.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Development CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+
+    <!-- Deployable CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <style>
+      /* .heading-tertiary::after{
+        right: 0 !important;
+        width:100px;
+        left:unset;
+      } */
+
+      @media only screen and (max-width: 1200px) {
+        iframe{
+          width:100%;
+          height:400px !important;
+        }
+
+        .contact-us__img-box{
+          width:100% !important;
+        }
+      }
+
+
+      #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 50px;
+  color: #007a69;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+#myBtn i{
+font-size: 18px;
+color: #007a69;
+}
+
+#myBtn:hover {
+  color: rgba(3, 130, 112, 0.78);
+}
+
+      body, html, *{
+        scroll-behavior: smooth;
+      }
+
+      .form__input:invalid, .form__textarea:invalid {
+    outline-color: #75e3d4;
+}
+
+      .header,.who-we-are,.mission,.why-us, .contact-us{
+        background: #accdb4;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <i class="fa-solid fa-circle-arrow-up" onclick="topFunction()" id="myBtn"></i>
+    <header class="header" id="home">
+      <div class="header__menu-bar">
+        <div class="header__logo-box">
+          <!-- <svg class="logo">
+            <use xlink:href="img/sprite.svg#buildco-logo-green"></use>
+          </svg> -->
+          <div class="logo">
+             <img src="img/logo5.png" alt="logo" style="width:280px;">
+            <!-- <h3 class="heading-tertiary u-margin-bottom-small" style="font-size:15px">AR Construction and Real Estate Corporation</h3> -->
+          </div>
+        </div>
+
+        <nav class="header__nav" style="margin-left:50px;">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#home" class="header__nav-link header__nav-link--active">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#services" class="header__nav-link">Services</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#about-us" class="header__nav-link">About Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contact-us" class="header__nav-link">Contact Us</a>
+            </li>
+            <!-- <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Estate</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Projects</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Gallery</a>
+            </li> -->
+            <!-- <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Contact Us</a>
+            </li> -->
+          </ul>
+        </nav>
+
+        <!-- <div class="header__btn-box">
+          <a href="#" class="btn btn--white">Login</a>
+          <a href="#" class="btn btn--green">Sign Up</a>
+        </div> -->
+      </div>
+      <div class="header__content u-margin-bottom-big">
+        <div class="header__hero-img-box">
+          <img
+            src="img/hero-img-2x.png"
+            alt="BuildCo Hero Image"
+            srcset="img/hero-img-1x.png 1x, img/hero-img-2x.png 2x"
+            class="header__hero-img"
+          />
+        </div>
+
+        <div class="header__text-box">
+          <h1 class="heading-primary u-margin-bottom-small">
+            <span class="heading-primary--sub"> If you can Imagine it, </span>
+            <span class="heading-primary--main">
+              We can <span class="emphasis">build</span> it.
+            </span>
+          </h1>
+          <p class="heading-sub u-margin-bottom-mid">
+            We are a people-orientated, progressive business, driven by our
+            values to deliver lasting change for our stakeholders and the
+            communities we work in.
+          </p>
+
+          <div class="header__form-group">
+            <form action="#" class="header__form">
+              <input
+                class="header__form-input u-margin-bottom-mid"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email"
+                autocomplete="off"
+                required
+              />
+              <button class="btn btn--green">Let's Build</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="who-we-are" id="who-we-are">
+        <h3 class="heading-tertiary u-margin-bottom-small">AR Construction and Real Estate Corporation</h3>
+        <div class="who-we-are__content" style="flex-direction:column;gap:unset">
+          <div class="who-we-are__left">
+            <h2 class="heading-secondary u-margin-bottom-small">Who we are</h2>
+            <p class="paragraph" style="text-align:justify">
+              &nbsp&nbsp&nbsp&nbsp&nbsp AR Construction and Real Estate Corporation is committed to meet our customer’s expectations with our services. Work with honesty, integrity and embracing changes and innovation to seek excellence in our field. We are confident that we can provide professional client-focused construction solutions. As an employee-owned company, we go above and beyond on every project and deliver on our promises with integrity.
+              Effective planning, efficient design and quality construction are consistently applied in project planning and implementation. AR Construction and Real Estate Corporation maintains skillful, competent labor workforce who works hand in hand with every efficient site administrator to guarantee best results.
+          </div>
+              <h2 style="margin-top:30px;margin-bottom:30px;text-align:center;">CORE VALUES</h2>
+          <div class="who-we-are__right">
+            <p class="who-we-are__paragraph paragraph" style="text-align:justify">
+              <span class="emphasis">Integrity</span>
+              We seek to act with integrity and to accept accountability for our actions. We steadfastly adhere to high principles and professional standards. We conduct ourselves with uncompromising integrity and honesty as individuals, as teams, and as a company.
+            </p>
+
+            <p class="who-we-are__paragraph paragraph" style="text-align:justify">
+              <span class="emphasis">Excellence</span>
+              We have the passion to do our best in each moment, relentlessly pursuing continuous improvement and excellence in projects, products, processes, and services.
+
+            </p>
+
+            <p class="who-we-are__paragraph paragraph" style="text-align:justify">
+              <span class="emphasis">Innovation</span>
+              We encourage generating ideas at every level in the organization. We foster creativity in the workplace as we are committed to challenging ourselves to deliver increasing value to our customers.
+            </p>
+
+            <p class="who-we-are__paragraph paragraph" style="text-align:justify">
+              <span class="emphasis">Safety</span>
+              The safety of our employees and the traveling public is everyone’s responsibility. Plan safety into every aspect of our work and do not deviate from that plan. Strive for zero incidents.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="what-we-offer" id="services">
+        <div class="heading__fix u-center-text" id="what-do-we-offer">
+          <h3 class="heading-tertiary u-margin-bottom-small">Our services</h3>
+        </div>
+
+        <h2 class="heading-secondary u-margin-bottom-small u-center-text" id="what-do-we-offer">
+          What we do offer
+        </h2>
+        <p class="paragraph u-margin-bottom-big u-center-text">
+          As a leader in our industry, we have always worked to develop advanced
+          technology and innovative methods.
+        </p>
+
+        <div class="what-we-offer__content-box">
+          <div class="what-we-offer__content">
+            <h4 class="what-we-offer__title u-margin-bottom-small">
+              <span class="icon-box">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#crane"></use>
+                </svg>
+              </span>
+              New Building Construction
+            </h4>
+            <p class="paragraph">
+              Whatever your construction requirements we can help you - from new
+              builds to refurbishments.
+            </p>
+          </div>
+          <div class="what-we-offer__content">
+            <h4 class="what-we-offer__title u-margin-bottom-small">
+              <span class="icon-box">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#compass"></use>
+                </svg>
+              </span>
+              Architectural Designs
+            </h4>
+            <p class="paragraph">
+              Building Design, Interior Design, Structural Design, 3D
+              Visualization.
+            </p>
+          </div>
+          <div class="what-we-offer__content">
+            <h4 class="what-we-offer__title u-margin-bottom-small">
+              <span class="icon-box">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#electric"></use>
+                </svg>
+              </span>
+              Commercial and Electrical Installations
+            </h4>
+            <p class="paragraph">
+              We install and cable associated devices such as switches,
+              distribution boards, sockets, and light fittings in a structure.
+            </p>
+          </div>
+          <div class="what-we-offer__content">
+            <h4 class="what-we-offer__title u-margin-bottom-small">
+              <span class="icon-box">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#view"></use>
+                </svg>
+              </span>
+              Landscaping & External Works
+            </h4>
+            <p class="paragraph">
+              Hard landscaping projects create an interesting outside area to
+              your property and will add to its value.
+            </p>
+          </div>
+          <div class="what-we-offer__content">
+            <h4 class="what-we-offer__title u-margin-bottom-small">
+              <span class="icon-box">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#mechanic"></use>
+                </svg>
+              </span>
+              Mechanical and Renewables
+            </h4>
+            <p class="paragraph">
+              We design, install, commission, maintain and service a vast range
+              of mechanical equipment in Private Housing, Social Housing and
+              Commercial properties.
+            </p>
+          </div>
+          <!-- <div class="what-we-offer__content">
+            <h4 class="what-we-offer__title u-margin-bottom-small">
+              <span class="icon-box">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#roof"></use>
+                </svg>
+              </span>
+              Roofing Installation
+            </h4>
+            <p class="paragraph">
+              We provide effective, service-oriented roofing and consistently
+              providing our clients with materials of the highest quality.
+            </p>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="mission" id="about-us">
+        <h3 class="heading-tertiary u-margin-bottom-small">ABOUT US</h3>
+        <div class="mission__container">
+          <div class="mission__content-box mission__left">
+            <div class="mission__content">
+              <h4 class="mission__title u-margin-bottom-small">Mission</h4>
+              <p class="paragraph" style="text-align:justify">
+                <ul style="list-style:circle;font-size:14px">
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    To be a leading construction company in the global market.
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    To become the customers' most preferred choice by attaining excellence in quality and timely completed value-added projects.
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    To provide the highest level of service in the construction industry while offering superior craftsmanship to every project, we handle.
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    To continually innovate, develop and adopt state-of-the-art technology in methods and materials to enhance productivity and cost effectiveness.
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    To continually improve the competence of our team, and employ diverse, innovative & results-oriented personals, motivated to deliver excellence.
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    To build a safety culture aimed at continually reducing the frequency severity rate towards achieving zero accidents.
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    To identify and mitigate all the environmental impacts arising from our activities, and comply with applicable environmental norms.
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    By committing to timely delivery with the highest standards of quality in our projects and services;
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    By providing responsible and exceptional customer experience;
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    By committing to be the foremost green builder in the country through environmental practices and sustainable development;
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;">
+                    By continually improving our system, processes, and governance; And by dedicating our efforts towards the health, safety, and well-being of our people and stakeholders, by advocating safety standards.
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <div class="mission__right">
+            <div class="mission__img-box">
+              <img
+                src="img/mission-img-2x.png"
+                alt="Mission Image"
+                class="mission__img"
+                srcset="img/qw.png 1x, img/qw.png 2x"
+              / style="width:400px;">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission">
+        <!-- <h3 class="heading-tertiary u-margin-bottom-small">ABOUT US</h3> -->
+        <div class="heading__fix u-center-text" style="text-align:right !important">
+          <h3 class="heading-tertiary u-margin-bottom-small">ABOUT US</h3>
+        </div>
+        <div class="mission__container" style="flex-direction:row-reverse">
+          <div class="mission__content-box mission__left">
+            <div class="mission__content">
+              <h4 class="mission__title u-margin-bottom-small">Vision</h4>
+              <p class="paragraph" style="text-align:justify;">
+                <ul style="list-style:circle;font-size:14px">
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    To become the leading construction firm, while delivering projects that consistently exceed international standards and provide exceptional customer satisfaction.
+                    To continually deliver excellent value & innovative construction solutions to meet our clients' requirements.
+                  </li>
+                  <li style="text-align:justify;color:#656565;padding-left:5px;padding-bottom:5px;">
+                    Using modern principles and sophisticated technologies, A.R Construction and Real Estate Corporation envisions being the primary preference at all times both nationally and globally, for their renowned excellence, quality, performance and reliability in all types of constructions.
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <div class="mission__right">
+            <div class="mission__img-box">
+              <img
+                src="img/mission-img-2x.png"
+                alt="Mission Image"
+                class="mission__img"
+                srcset="img/w.png 1x, img/w.png 2x"
+              / style="width:400px">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us" id="why-us">
+        <div class="why-us__left">
+          <img
+            src="img/why-us-img-2x.png"
+            alt="Why us"
+            class="why-us__img"
+            srcset="img/why-us-img-1x.png 1x, img/why-us-img-2x.png 2x"
+          />
+        </div>
+
+        <div class="why-us__right">
+          <h3 class="heading-tertiary u-margin-bottom-small">Why us</h3>
+          <h2 class="heading-secondary u-margin-bottom-small" id="objective">
+            OBJECTIVE
+          </h2>
+          <p class="paragraph" style="text-align:justify;">
+            Building a successful project is contingent on the company’s management capabilities to perform the work and is always based on client satisfaction. Continuously building quality projects requires a company-wide mindset that unites all team members behind one main purpose Building Excellence. At A.R Construction and Real Estate Corporation, we believe integrity and high performance standards must come from the top. This is why our senior executives are involved in our projects from day one and stay involved until the final closeout. The key to professional project execution is fundamental anticipate and eliminate problems before they happen. Our team works with the owners, construction team, designers and engineers, with the detail that only specialists can provide, to plan, budget and schedule every aspect of your project. Once construction begins, sound management skills, seasoned field supervision and sophisticated computer management technologies work together with competent subcontractors and suppliers to keep your project on track. The result is a quality facility that is complete when promised, as promised.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-us" id="contact-us">
+        <h3 class="heading-tertiary u-margin-bottom-small">Contact Us</h3>
+        <div class="contact-us__container">
+          <div class="contact-us__left">
+            <h2 class="heading-secondary u-margin-bottom-small">Let's Talk</h2>
+            <p class="paragraph u-margin-bottom-mid">
+              We've found that we deliver the greatest value to our clients when
+              we establish ongoing relationships that allow us to materially
+              contribute to their long-term success.
+            </p>
+
+            <div class="contact-us__inner-content-box">
+              <h3 class="contact-us__title u-margin-bottom-small">
+                <span class="contact-us__icon-box">
+                  <svg class="arr-down">
+                    <use xlink:href="img/sprite.svg#arrow-down-green"></use>
+                  </svg>
+                </span>
+                Visit us personally
+              </h3>
+              <p class="paragraph u-margin-bottom-small">
+                West City Plaza, West Avenue, Quezon City
+              </p>
+
+              <div class="contact-us__img-box" style="width:50%;height:400px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2012364974275!2d121.02552061484076!3d14.644515289774551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b656082805c9%3A0xce2e921213c9352e!2sWest%20City%20Plaza!5e0!3m2!1sen!2sph!4v1660543247781!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-us__right">
+            <form action="#" class="contact-us__form form">
+              <div class="form__col form__col--1 u-margin-bottom-small">
+                <div class="form__group">
+                  <label for="name" class="form__label">Name</label>
+                  <input
+                    class="form__input"
+                    type="name"
+                    name="name"
+                    id="name"
+                    placeholder="-Name-"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label for="contact-email" class="form__label">Email</label>
+                  <input
+                    class="form__input"
+                    type="email"
+                    name="contact-email"
+                    id="contact-email"
+                    placeholder="-Email-"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form__col form__col--2 u-margin-bottom-mid">
+                <div class="form__group">
+                  <label for="message" class="form__label">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form__textarea"
+                    required
+                    placeholder="-Message-"
+                  ></textarea>
+                </div>
+              </div>
+
+              <button class="btn btn--green">Send us a message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__row-1">
+        <div class="footer__box">
+          <h4 class="footer__title">Shortcuts</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#what-do-we-offer" class="footer__link">What Do We offer</a>
+            </li>
+            <li class="footer__item">
+              <a href="#why-us" class="footer__link">Why Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#objective" class="footer__link">Objective</a>
+            </li>
+            <li class="footer__item">
+              <a href="#who-we-are" class="footer__link">Who are we</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <h4 class="footer__title">Support</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Get Help</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">FAQs</a>
+            </li>
+            <li class="#footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms of Operation</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#home" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li class="#footer__item">
+              <a href="#about-us" class="footer__link">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#contact-us" class="footer__link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="footer__box">
+          <label for="language" class="footer__title">Language</label>
+          <select name="language" id="language" class="footer__dropdown" onchange="window.location.href='/'+this.options[this.selectedIndex].value;">
+            <option class="footer__dropdown-item" value="en" lang="en">English</option>
+            <option class="footer__dropdown-item" value="fr">French</option>
+            <option class="footer__dropdown-item" value="es">Spanish</option>
+            <option class="footer__dropdown-item" value="ar">Arabic</option>
+          </select>
+        </div> -->
+        <div class="footer__box">
+          <label for="language" class="footer__title">Language</label>
+          <select name="language" id="language" class="footer__dropdown" >
+            <option class="footer__dropdown-item" value="en" lang="en">English</option>
+            <option class="footer__dropdown-item" value="fr">French</option>
+            <option class="footer__dropdown-item" value="es">Spanish</option>
+            <option class="footer__dropdown-item" value="ar">Arabic</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="footer__row-2 u-margin-top-small">
+        <p class="copyright">&copy; 2022 All Rights Reserved.</p>
+
+        <div class="footer__social-icons-box">
+          <a href="#" class="footer__social-link">
+            <svg class="social-icon">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg class="social-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg class="social-icon">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__row-3 u-margin-top-small">
+        <!-- <svg class="logo">
+          <use xlink:href="img/sprite.svg#buildco-logo-white"></use>
+        </svg> -->
+        <div class="logo" style="width:unset;height:unset;">
+           <img src="img/logo8.png" alt="logo" style="width:250px;">
+           <!-- <h3 class="heading-tertiary u-margin-bottom-small" style="font-size:15px">AR Construction and Real Estate Corporation</h3>
+        </div> -->
+        <!-- <p class="developer-text">Made by 🤍ricky</p> -->
+      </div>
+    </footer>
+
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script>
+    $(document).ready(function(){
+     $('meta[name="viewport"]').prop('content', 'width=1440');
+}); -->
+
+    <!-- </script> -->
+
+    <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+  </body>
+</html>
